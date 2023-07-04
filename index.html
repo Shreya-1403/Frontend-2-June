@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FrontEnd-2</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="enterInfo">
+            <h1 class="stud">Student Management CRUD</h1>
+            <form autocomplete="off" onsubmit="OnSubmit()" method="post" class="studInfo" id="studInfo">
+                <input type="text" name="name" id="name" placeholder="Name">
+                <input type="email" name="email" id="email" placeholder="Email ID">
+                <input type="number" name="gpa" id="gpa" placeholder="GPA" max="10">
+                <input type="number" name="age" id="age" placeholder="Age">
+                <input type="text" name="degree" id="degree" placeholder="Degree">
+                <br>
+                <input type="submit" class="btn" value="Add Student">
+                
+            </form>
+        </div>
+        <div class="displayInfo">
+                <input type="text" class="search" placeholder="Search by Name, email or degree..." onclick="OnSearch()">
+                <table class="tbl" id="tbl">
+                   <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>GPA</th>
+                        <th>Age</th>
+                        <th>Degree</th>
+                    </tr>
+                   </thead>
+                    <tbody id="tbody">
+
+                    </tbody>
+                </table>
+        </div>
+        <div class="editTable">
+            <tbody>
+
+            </tbody>
+        </div>
+    </div>
+    <script src="script.js">
+
+    </script>
+</body>
+</html>
